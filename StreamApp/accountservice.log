@@ -1,0 +1,1319 @@
+2019-11-27 17:44:00.969  INFO 74452 --- [main] k.s.SpringMain                           : Starting SpringMain on PUNITP322464D with PID 74452 (D:\SpingWork\StreamApp\target\classes started by harshatej.rane in D:\SpingWork\StreamApp)
+2019-11-27 17:44:01.097  INFO 74452 --- [main] k.s.SpringMain                           : No active profile set, falling back to default profiles: default
+2019-11-27 17:44:01.431  INFO 74452 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5d2087: startup date [Wed Nov 27 17:44:01 IST 2019]; root of context hierarchy
+2019-11-27 17:44:04.711  INFO 74452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-27 17:44:04.722  INFO 74452 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-11-27 17:44:04.723  INFO 74452 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-11-27 17:44:04.886  INFO 74452 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-27 17:44:04.886  INFO 74452 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 3455 ms
+2019-11-27 17:44:05.313  INFO 74452 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-27 17:44:05.319  INFO 74452 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-27 17:44:05.322  INFO 74452 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-27 17:44:05.322  INFO 74452 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-27 17:44:05.327  INFO 74452 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-27 17:44:06.221  INFO 74452 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5d2087: startup date [Wed Nov 27 17:44:01 IST 2019]; root of context hierarchy
+2019-11-27 17:44:06.352  INFO 74452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 17:44:06.413  INFO 74452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 17:44:06.474  INFO 74452 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 17:44:06.475  INFO 74452 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 17:44:06.630  INFO 74452 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 17:44:07.414  INFO 74452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-27 17:44:07.597  INFO 74452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-27 17:44:07.620  INFO 74452 --- [main] k.s.SpringMain                           : Started SpringMain in 8.053 seconds (JVM running for 16.776)
+2019-11-27 17:44:07.681  INFO 74452 --- [main] k.s.StreamOperation                      : Received String
+2019-11-27 17:44:07.701  INFO 74452 --- [main] k.s.StreamOperation                      : sent String
+2019-11-27 17:44:07.795  INFO 74452 --- [main] o.a.k.s.StreamsConfig                    : StreamsConfig values: 
+	application.id = StreamApp
+	application.server = 
+	bootstrap.servers = [127.0.0.1:9092]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2019-11-27 17:44:08.136  INFO 74452 --- [main] o.a.k.c.a.AdminClientConfig              : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-11-27 17:44:08.211  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 17:44:08.211  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 17:44:08.212  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574856848193
+2019-11-27 17:44:08.215  INFO 74452 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] Creating restore consumer client
+2019-11-27 17:44:08.221  INFO 74452 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 17:44:08.445  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 17:44:08.445  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 17:44:08.446  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574856848445
+2019-11-27 17:44:08.449  INFO 74452 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] Creating shared producer client
+2019-11-27 17:44:08.453  INFO 74452 --- [main] o.a.k.c.p.ProducerConfig                 : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-11-27 17:44:08.571  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 17:44:08.597  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 17:44:08.597  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574856848570
+2019-11-27 17:44:08.630  INFO 74452 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] Creating consumer client
+2019-11-27 17:44:08.637  INFO 74452 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = StreamApp
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 17:44:08.862  WARN 74452 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retries' was supplied but isn't a known config.
+2019-11-27 17:44:08.863  WARN 74452 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2019-11-27 17:44:08.863  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 17:44:08.863  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 17:44:08.864  INFO 74452 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574856848863
+2019-11-27 17:44:09.233  INFO 74452 --- [main] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b] State transition from CREATED to REBALANCING
+2019-11-27 17:44:09.235  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] Starting
+2019-11-27 17:44:09.235  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] State transition from CREATED to STARTING
+2019-11-27 17:44:09.249  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Subscribed to pattern: 'fullfillment.public.testtable'
+2019-11-27 17:44:09.439  INFO 74452 --- [kafka-producer-network-thread | StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-producer] o.a.k.c.Metadata                         : [Producer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-producer] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 17:44:09.504  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.Metadata                         : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 17:44:09.518  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Discovered group coordinator 10.0.75.1:9092 (id: 2147483647 rack: null)
+2019-11-27 17:44:09.590  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Revoking previously assigned partitions []
+2019-11-27 17:44:09.590  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] State transition from STARTING to PARTITIONS_REVOKED
+2019-11-27 17:44:09.591  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 17:44:09.591  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] partition revocation took 0 ms.
+	suspended active tasks: []
+	suspended standby tasks: []
+2019-11-27 17:44:09.591  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] (Re-)joining group
+2019-11-27 17:44:09.747  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer] Assigned tasks to clients as {2eadd0aa-c26d-48fd-bed0-3ef19136eb5b=[activeTasks: ([0_0]) standbyTasks: ([]) assignedTasks: ([0_0]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevAssignedTasks: ([]) capacity: 1]}.
+2019-11-27 17:44:09.948  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Successfully joined group with generation 1
+2019-11-27 17:44:09.953  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Setting newly assigned partitions: fullfillment.public.testtable-0
+2019-11-27 17:44:09.953  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
+2019-11-27 17:44:10.028  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] partition assignment took 75 ms.
+	current active tasks: [0_0]
+	current standby tasks: []
+	previous active tasks: []
+
+2019-11-27 17:44:10.061  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 17:44:10.062  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 17:44:10.062  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2019-11-27 17:44:10.063  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b] State transition from REBALANCING to RUNNING
+2019-11-27 17:44:10.103  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Found no committed offset for partition fullfillment.public.testtable-0
+2019-11-27 17:44:10.155  INFO 74452 --- [StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1] o.a.k.c.c.i.SubscriptionState            : [Consumer clientId=StreamApp-2eadd0aa-c26d-48fd-bed0-3ef19136eb5b-StreamThread-1-consumer, groupId=StreamApp] Resetting offset for partition fullfillment.public.testtable-0 to offset 0.
+2019-11-27 17:58:35.877  INFO 74452 --- [RMI TCP Connection(52)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-27 17:58:36.133  INFO 74452 --- [RMI TCP Connection(52)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5d2087: startup date [Wed Nov 27 17:44:01 IST 2019]; root of context hierarchy
+2019-11-27 17:58:37.305  INFO 74452 --- [RMI TCP Connection(52)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-27 18:00:05.706  INFO 76300 --- [main] k.s.SpringMain                           : Starting SpringMain on PUNITP322464D with PID 76300 (D:\SpingWork\StreamApp\target\classes started by harshatej.rane in D:\SpingWork\StreamApp)
+2019-11-27 18:00:05.713  INFO 76300 --- [main] k.s.SpringMain                           : No active profile set, falling back to default profiles: default
+2019-11-27 18:00:06.619  INFO 76300 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d9ab4e3e: startup date [Wed Nov 27 18:00:06 IST 2019]; root of context hierarchy
+2019-11-27 18:00:12.231  INFO 76300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-27 18:00:12.248  INFO 76300 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-11-27 18:00:12.251  INFO 76300 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-11-27 18:00:12.515  INFO 76300 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-27 18:00:12.517  INFO 76300 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5898 ms
+2019-11-27 18:00:13.368  INFO 76300 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-27 18:00:13.375  INFO 76300 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-27 18:00:13.379  INFO 76300 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-27 18:00:13.382  INFO 76300 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-27 18:00:13.385  INFO 76300 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-27 18:00:14.850  INFO 76300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d9ab4e3e: startup date [Wed Nov 27 18:00:06 IST 2019]; root of context hierarchy
+2019-11-27 18:00:15.159  INFO 76300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 18:00:15.162  INFO 76300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 18:00:15.317  INFO 76300 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:00:15.318  INFO 76300 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:00:15.541  INFO 76300 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:00:16.132  INFO 76300 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-27 18:00:16.261  INFO 76300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-27 18:00:16.271  INFO 76300 --- [main] k.s.SpringMain                           : Started SpringMain in 12.765 seconds (JVM running for 24.444)
+2019-11-27 18:00:16.447  INFO 76300 --- [main] k.s.StreamOperation                      : Received String
+2019-11-27 18:00:16.460  INFO 76300 --- [main] k.s.StreamOperation                      : sent String
+2019-11-27 18:00:16.600  INFO 76300 --- [main] o.a.k.s.StreamsConfig                    : StreamsConfig values: 
+	application.id = StreamApp
+	application.server = 
+	bootstrap.servers = [127.0.0.1:9092]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2019-11-27 18:00:16.734  INFO 76300 --- [main] o.a.k.c.a.AdminClientConfig              : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-11-27 18:00:16.899  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:00:16.900  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:00:16.901  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574857816895
+2019-11-27 18:00:16.905  INFO 76300 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] Creating restore consumer client
+2019-11-27 18:00:16.920  INFO 76300 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 18:00:17.758  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:00:17.760  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:00:17.762  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574857817758
+2019-11-27 18:00:17.772  INFO 76300 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] Creating shared producer client
+2019-11-27 18:00:17.874  INFO 76300 --- [main] o.a.k.c.p.ProducerConfig                 : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-11-27 18:00:18.012  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:00:18.014  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:00:18.017  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574857818012
+2019-11-27 18:00:18.079  INFO 76300 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] Creating consumer client
+2019-11-27 18:00:18.084  INFO 76300 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = StreamApp
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 18:00:18.196  WARN 76300 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retries' was supplied but isn't a known config.
+2019-11-27 18:00:18.197  WARN 76300 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2019-11-27 18:00:18.198  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:00:18.199  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:00:18.200  INFO 76300 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574857818198
+2019-11-27 18:00:18.332  INFO 76300 --- [main] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb] State transition from CREATED to REBALANCING
+2019-11-27 18:00:18.343  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] Starting
+2019-11-27 18:00:18.345  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] State transition from CREATED to STARTING
+2019-11-27 18:00:18.353  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Subscribed to pattern: 'fullfillment.public.testtable'
+2019-11-27 18:00:19.596  INFO 76300 --- [kafka-producer-network-thread | StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-producer] o.a.k.c.Metadata                         : [Producer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-producer] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 18:00:19.900  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.Metadata                         : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 18:00:19.913  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Discovered group coordinator 10.0.75.1:9092 (id: 2147483647 rack: null)
+2019-11-27 18:00:20.014  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Revoking previously assigned partitions []
+2019-11-27 18:00:20.015  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] State transition from STARTING to PARTITIONS_REVOKED
+2019-11-27 18:00:20.016  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:00:20.017  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] partition revocation took 1 ms.
+	suspended active tasks: []
+	suspended standby tasks: []
+2019-11-27 18:00:20.018  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] (Re-)joining group
+2019-11-27 18:00:20.508  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer] Assigned tasks to clients as {6aaafd01-3707-485b-a11b-13a8e76ebacb=[activeTasks: ([0_0]) standbyTasks: ([]) assignedTasks: ([0_0]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevAssignedTasks: ([]) capacity: 1]}.
+2019-11-27 18:00:20.565  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Successfully joined group with generation 1
+2019-11-27 18:00:20.609  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Setting newly assigned partitions: fullfillment.public.testtable-0
+2019-11-27 18:00:20.611  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
+2019-11-27 18:00:20.678  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] partition assignment took 67 ms.
+	current active tasks: [0_0]
+	current standby tasks: []
+	previous active tasks: []
+
+2019-11-27 18:00:20.746  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:00:20.747  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:00:20.748  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2019-11-27 18:00:20.750  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb] State transition from REBALANCING to RUNNING
+2019-11-27 18:00:20.753  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Found no committed offset for partition fullfillment.public.testtable-0
+2019-11-27 18:00:20.809  INFO 76300 --- [StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1] o.a.k.c.c.i.SubscriptionState            : [Consumer clientId=StreamApp-6aaafd01-3707-485b-a11b-13a8e76ebacb-StreamThread-1-consumer, groupId=StreamApp] Resetting offset for partition fullfillment.public.testtable-0 to offset 0.
+2019-11-27 18:06:27.440  INFO 74360 --- [main] k.s.SpringMain                           : Starting SpringMain on PUNITP322464D with PID 74360 (D:\SpingWork\StreamApp\target\classes started by harshatej.rane in D:\SpingWork\StreamApp)
+2019-11-27 18:06:27.445  INFO 74360 --- [main] k.s.SpringMain                           : No active profile set, falling back to default profiles: default
+2019-11-27 18:06:27.844  INFO 74360 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2509055: startup date [Wed Nov 27 18:06:27 IST 2019]; root of context hierarchy
+2019-11-27 18:06:43.576  INFO 74360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-27 18:06:43.710  INFO 74360 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-11-27 18:06:43.712  INFO 74360 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-11-27 18:06:45.474  INFO 74360 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-27 18:06:45.476  INFO 74360 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 17745 ms
+2019-11-27 18:06:46.808  INFO 74360 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-27 18:06:46.841  INFO 74360 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-27 18:06:46.842  INFO 74360 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-27 18:06:46.843  INFO 74360 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-27 18:06:46.844  INFO 74360 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-27 18:06:49.226  INFO 74360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2509055: startup date [Wed Nov 27 18:06:27 IST 2019]; root of context hierarchy
+2019-11-27 18:06:49.533  INFO 74360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 18:06:49.536  INFO 74360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 18:06:49.776  INFO 74360 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:06:49.777  INFO 74360 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:06:50.219  INFO 74360 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:06:51.883  INFO 74360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-27 18:06:52.418 ERROR 74360 --- [main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler [http-nio-8081]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_202]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_202]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_202]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_202]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_202]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at kafka.stream.SpringMain.main(SpringMain.java:12) [classes/:?]
+
+2019-11-27 18:06:52.490 ERROR 74360 --- [main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8081]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at kafka.stream.SpringMain.main(SpringMain.java:12) [classes/:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_202]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_202]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_202]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_202]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_202]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	... 13 more
+
+2019-11-27 18:06:52.501  INFO 74360 --- [main] o.a.c.c.StandardService                  : Stopping service Tomcat
+2019-11-27 18:06:52.606  INFO 74360 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-27 18:06:52.676 ERROR 74360 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-11-27 18:06:52.680  INFO 74360 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2509055: startup date [Wed Nov 27 18:06:27 IST 2019]; root of context hierarchy
+2019-11-27 18:06:52.683  INFO 74360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-27 18:08:43.217  INFO 76300 --- [RMI TCP Connection(35)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-27 18:08:43.272  INFO 76300 --- [RMI TCP Connection(35)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d9ab4e3e: startup date [Wed Nov 27 18:00:06 IST 2019]; root of context hierarchy
+2019-11-27 18:08:43.624  INFO 76300 --- [RMI TCP Connection(35)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-27 18:09:53.431  INFO 75132 --- [main] k.s.SpringMain                           : Starting SpringMain on PUNITP322464D with PID 75132 (D:\SpingWork\StreamApp\target\classes started by harshatej.rane in D:\SpingWork\StreamApp)
+2019-11-27 18:09:53.444  INFO 75132 --- [main] k.s.SpringMain                           : No active profile set, falling back to default profiles: default
+2019-11-27 18:09:53.904  INFO 75132 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@673c75d0: startup date [Wed Nov 27 18:09:53 IST 2019]; root of context hierarchy
+2019-11-27 18:09:59.934  INFO 75132 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-27 18:09:59.965  INFO 75132 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-11-27 18:09:59.969  INFO 75132 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-11-27 18:10:00.702  INFO 75132 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-27 18:10:00.705  INFO 75132 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6808 ms
+2019-11-27 18:10:01.576  INFO 75132 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-27 18:10:01.588  INFO 75132 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-27 18:10:01.592  INFO 75132 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-27 18:10:01.596  INFO 75132 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-27 18:10:01.599  INFO 75132 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-27 18:10:02.709  INFO 75132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@673c75d0: startup date [Wed Nov 27 18:09:53 IST 2019]; root of context hierarchy
+2019-11-27 18:10:02.851  INFO 75132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 18:10:02.869  INFO 75132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 18:10:03.019  INFO 75132 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:10:03.104  INFO 75132 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:10:03.436  INFO 75132 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:10:04.355  INFO 75132 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-27 18:10:04.757  INFO 75132 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-27 18:10:04.774  INFO 75132 --- [main] k.s.SpringMain                           : Started SpringMain in 13.284 seconds (JVM running for 22.521)
+2019-11-27 18:10:05.021  INFO 75132 --- [main] k.s.StreamOperation                      : Received String
+2019-11-27 18:10:05.030  INFO 75132 --- [main] k.s.StreamOperation                      : sent String
+2019-11-27 18:10:05.094  INFO 75132 --- [main] o.a.k.s.StreamsConfig                    : StreamsConfig values: 
+	application.id = StreamApp
+	application.server = 
+	bootstrap.servers = [127.0.0.1:9092]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2019-11-27 18:10:05.281  INFO 75132 --- [main] o.a.k.c.a.AdminClientConfig              : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:9092]
+	client.dns.lookup = default
+	client.id = StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-11-27 18:10:05.644  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:10:05.645  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:10:05.645  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574858405638
+2019-11-27 18:10:05.650  INFO 75132 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] Creating restore consumer client
+2019-11-27 18:10:05.695  INFO 75132 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 18:10:05.798  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:10:05.799  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:10:05.800  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574858405798
+2019-11-27 18:10:05.803  INFO 75132 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] Creating shared producer client
+2019-11-27 18:10:05.808  INFO 75132 --- [main] o.a.k.c.p.ProducerConfig                 : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-11-27 18:10:06.396  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:10:06.397  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:10:06.398  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574858406396
+2019-11-27 18:10:06.467  INFO 75132 --- [main] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] Creating consumer client
+2019-11-27 18:10:06.504  INFO 75132 --- [main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = StreamApp
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-11-27 18:10:06.625  WARN 75132 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retries' was supplied but isn't a known config.
+2019-11-27 18:10:06.626  WARN 75132 --- [main] o.a.k.c.c.ConsumerConfig                 : The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2019-11-27 18:10:06.627  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka version: 2.3.0
+2019-11-27 18:10:06.635  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka commitId: fc1aaa116b661c8a
+2019-11-27 18:10:06.636  INFO 75132 --- [main] o.a.k.c.u.AppInfoParser                  : Kafka startTimeMs: 1574858406627
+2019-11-27 18:10:06.712  INFO 75132 --- [main] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d] State transition from CREATED to REBALANCING
+2019-11-27 18:10:06.728  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] Starting
+2019-11-27 18:10:06.729  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] State transition from CREATED to STARTING
+2019-11-27 18:10:06.731  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Subscribed to pattern: 'fullfillment.public.testtable'
+2019-11-27 18:10:07.149  INFO 75132 --- [kafka-producer-network-thread | StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-producer] o.a.k.c.Metadata                         : [Producer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-producer] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 18:10:07.229  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.Metadata                         : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Cluster ID: HtqDFptNR7G3GhMvcjhrig
+2019-11-27 18:10:07.250  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Discovered group coordinator 10.0.75.1:9092 (id: 2147483647 rack: null)
+2019-11-27 18:10:07.328  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Revoking previously assigned partitions []
+2019-11-27 18:10:07.330  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] State transition from STARTING to PARTITIONS_REVOKED
+2019-11-27 18:10:07.330  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:10:07.331  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] partition revocation took 1 ms.
+	suspended active tasks: []
+	suspended standby tasks: []
+2019-11-27 18:10:07.332  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] (Re-)joining group
+2019-11-27 18:10:07.463  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer] Assigned tasks to clients as {59848edb-ab18-48c4-9aa1-df4db1e2835d=[activeTasks: ([0_0]) standbyTasks: ([]) assignedTasks: ([0_0]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevAssignedTasks: ([]) capacity: 1]}.
+2019-11-27 18:10:07.496  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Successfully joined group with generation 3
+2019-11-27 18:10:07.504  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Setting newly assigned partitions: fullfillment.public.testtable-0
+2019-11-27 18:10:07.504  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] State transition from PARTITIONS_REVOKED to PARTITIONS_ASSIGNED
+2019-11-27 18:10:08.159  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] partition assignment took 655 ms.
+	current active tasks: [0_0]
+	current standby tasks: []
+	previous active tasks: []
+
+2019-11-27 18:10:08.367  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:10:08.369  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.KafkaConsumer                  : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2019-11-27 18:10:08.370  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.p.i.StreamThread                 : stream-thread [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2019-11-27 18:10:08.372  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.s.KafkaStreams                     : stream-client [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d] State transition from REBALANCING to RUNNING
+2019-11-27 18:10:08.390  INFO 75132 --- [StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=StreamApp-59848edb-ab18-48c4-9aa1-df4db1e2835d-StreamThread-1-consumer, groupId=StreamApp] Setting offset for partition fullfillment.public.testtable-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.75.1:9092 (id: 0 rack: null), epoch=-1}}
+2019-11-27 18:10:29.412  INFO 75132 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-27 18:10:29.413  INFO 75132 --- [RMI TCP Connection(4)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@673c75d0: startup date [Wed Nov 27 18:09:53 IST 2019]; root of context hierarchy
+2019-11-27 18:10:29.416  INFO 75132 --- [RMI TCP Connection(4)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-27 18:25:10.722  INFO 74168 --- [main] k.s.SpringMain                           : Starting SpringMain on PUNITP322464D with PID 74168 (D:\SpingWork\StreamApp\target\classes started by harshatej.rane in D:\SpingWork\StreamApp)
+2019-11-27 18:25:10.922  INFO 74168 --- [main] k.s.SpringMain                           : No active profile set, falling back to default profiles: default
+2019-11-27 18:25:11.636  INFO 74168 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ceea66d8: startup date [Wed Nov 27 18:25:11 IST 2019]; root of context hierarchy
+2019-11-27 18:25:18.507  INFO 74168 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-27 18:25:18.564  INFO 74168 --- [main] o.a.c.c.StandardService                  : Starting service Tomcat
+2019-11-27 18:25:18.567  INFO 74168 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-11-27 18:25:18.858  INFO 74168 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-11-27 18:25:18.859  INFO 74168 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 7223 ms
+2019-11-27 18:25:19.308  INFO 74168 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-27 18:25:19.319  INFO 74168 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-27 18:25:19.320  INFO 74168 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-27 18:25:19.320  INFO 74168 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-27 18:25:19.320  INFO 74168 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-27 18:25:21.155  INFO 74168 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ceea66d8: startup date [Wed Nov 27 18:25:11 IST 2019]; root of context hierarchy
+2019-11-27 18:25:21.446  INFO 74168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-27 18:25:21.450  INFO 74168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-27 18:25:21.564  INFO 74168 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:25:21.566  INFO 74168 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:25:21.727  INFO 74168 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-27 18:25:22.474  INFO 74168 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-27 18:25:22.809  INFO 74168 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-27 18:25:22.817  INFO 74168 --- [main] k.s.SpringMain                           : Started SpringMain in 18.943 seconds (JVM running for 170.9)
+2019-11-27 18:25:22.913  INFO 74168 --- [main] k.s.StreamOperation                      : Received String
+2019-11-27 18:25:22.934  INFO 74168 --- [main] k.s.StreamOperation                      : sent String
+2019-11-27 18:25:23.066  INFO 74168 --- [main] o.a.k.s.StreamsConfig                    : StreamsConfig values: 
+	application.id = StreamApp
+	application.server = 
+	bootstrap.servers = [b-2.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094, b-1.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2019-11-27 18:25:23.144  INFO 74168 --- [main] o.a.k.c.a.AdminClientConfig              : AdminClientConfig values: 
+	bootstrap.servers = [b-2.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094, b-1.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094]
+	client.dns.lookup = default
+	client.id = StreamApp-b90b98a6-628d-4caf-bf0b-ac82568c53b7-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-11-27 18:25:33.256  WARN 74168 --- [main] o.a.k.c.ClientUtils                      : Couldn't resolve server b-2.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094 from bootstrap.servers as DNS resolution failed for b-2.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com
+2019-11-27 18:25:43.288  WARN 74168 --- [main] o.a.k.c.ClientUtils                      : Couldn't resolve server b-1.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com:9094 from bootstrap.servers as DNS resolution failed for b-1.cfkafkapoc.nj0tf5.c7.kafka.us-east-1.amazonaws.com

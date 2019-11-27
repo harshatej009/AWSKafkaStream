@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: StreamApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: harshatej.rane
+Implementation-Vendor-Id: kafka.stream
+Build-Jdk: 1.8.0_202
+Implementation-URL: http://projects.spring.io/spring-boot/StreamApp/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
